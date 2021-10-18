@@ -4,7 +4,7 @@ plugins {
 
 group 'org.example'
 version '1.0-SNAPSHOT'
-sourceCompatibility 14
+sourceCompatibility = '14'
 
 repositories {
     mavenCentral()
@@ -13,7 +13,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    runtimeOnly 'com.twilio.sdk:twilio:8.20.0'
+    implementation 'com.twilio.sdk:twilio:8.20.0'
 }
 
 test {
